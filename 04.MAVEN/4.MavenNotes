@@ -1,0 +1,22 @@
+### **Apache Maven - Open Source Build Automation Tool**
+
+### **Uses:**
+
+1. Manages Java projects and compiles/builds them.
+2. Handles dependencies, libraries, and plugins.
+3. Helps with project configuration and structuring.
+4. Supports a wide range of plugins.
+5. Automates application deployment to servers.
+
+### **Why Use Maven?**
+
+- All dependencies are managed in a single file: **pom.xml (Project Object Model - the heart of Maven).**
+- Simplifies dependency management by automatically downloading and adding libraries to the project.
+- Automates the build process.
+- Standardizes project structure.
+
+### **How to Create a Maven Project?**
+
+- **Group ID**: Name of the base package.
+- **Artifact ID**: Name of the project.
+- **Version**: Default version of the project.

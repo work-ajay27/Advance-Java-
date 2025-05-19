@@ -1,0 +1,49 @@
+# Hibernate CRUD Operations
+
+## 1. **Create (Insert)**
+```java
+Session session = sessionFactory.openSession();
+Transaction tx = session.beginTransaction();
+Hotel hotel = new Hotel("John Doe", 30);
+session.save(hotel);
+tx.commit();
+```
+
+## 2. **Read (Retrieve by ID)**
+```java
+Session session = sessionFactory.openSession();
+Hotel hotel = session.get(Hotel.class, searchId);
+System.out.println(hotel != null ? hotel : "No record found");
+```
+
+## 3. **Update**
+```java
+Session session = sessionFactory.openSession();
+Transaction tx = session.beginTransaction();
+Hotel hotel = session.get(Hotel.class, updateId);
+if (hotel != null) {
+    hotel.setCustomerName("Updated Name");
+    session.update(hotel);
+    tx.commit();
+}
+```
+
+## 4. **Delete**
+```java
+Session session = sessionFactory.openSession();
+Transaction tx = session.beginTransaction();
+Hotel hotel = session.get(Hotel.class, deleteId);
+if (hotel != null) {
+    session.delete(hotel);
+    tx.commit();
+}
+```
+
+## 5. **Retrieve All (Using Criteria API)**
+```java
+Session session = sessionFactory.openSession();
+Criteria criteria = session.createCriteria(Hotel.class);
+List<Hotel> hotels = criteria.list();
+hotels.forEach(System.out::println);
+```
+

@@ -1,0 +1,28 @@
+# 🏢 Employee Management System (Hibernate)
+
+This project implements an **Employee Management System** using **Java and Hibernate**, allowing users to perform CRUD operations on employee records with database persistence.
+
+## 📌 Features
+- Add a new employee
+- View all employees
+- Search for an employee by ID
+- Update employee details
+- Delete an employee by ID
+
+## 🛠 Technologies Used
+- **Java**
+- **Hibernate (ORM Framework)**
+- **MySQL**
+- **JPA (Java Persistence API)**
+
+## 🎯 Purpose of the Code
+- Demonstrates how to use Hibernate for object-relational mapping (ORM).
+- Provides practical implementation of CRUD operations with database persistence.
+- Helps in understanding database interaction using Hibernate and JPA.
+
+## 📄 Notes
+- This project is useful for learning Hibernate-based database operations.
+- Understanding Hibernate is crucial for developing enterprise applications.
+
+Happy Coding! 🚀
+

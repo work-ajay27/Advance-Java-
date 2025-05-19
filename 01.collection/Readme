@@ -1,0 +1,18 @@
+# 📂 Java Collections Basics
+
+This folder contains fundamental concepts and examples related to **Java Collections**. It helps beginners understand how collections work in Java without using  methods.
+
+## 📌 Concepts Covered
+- **Introduction to Collections** – Understanding the importance of collections in Java.
+- **Basic Collection Operations** – Working with collections without predefined methods.
+
+## 🛠 Technologies Used
+- **Java** (JDK 8+)
+
+## 🎯 Purpose of the Code
+- Provides basic code related to Java Collections.
+- Helps understand collection usage without built-in methods.
+
+## 📄 Notes
+- This is a foundational collection code for beginners to understand how Java Collections work.
+

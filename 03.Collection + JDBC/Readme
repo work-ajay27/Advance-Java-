@@ -1,0 +1,29 @@
+# 📂 Library Management System (Collection + JDBC)
+
+This project implements a **Library Management System** using **Java Collections and JDBC**. It allows users to manage books and members by performing CRUD operations on a database.
+
+## 📌 Features
+- Add a new book
+- View all books
+- Search for a book by ID
+- Update book details
+- Delete a book by ID
+- Connects Java Collections with a relational database using JDBC
+
+## 🛠 Technologies Used
+- **Java**
+- **JDBC (Java Database Connectivity)**
+- **MySQL**
+- **Collections Framework**
+
+## 🎯 Purpose of the Code
+- Demonstrates CRUD operations using JDBC and Collections.
+- Provides practical implementation of Java Collections with database interaction.
+- Helps in understanding how to integrate Java Collections with a database.
+
+## 📄 Notes
+- This project is useful for learning database connectivity using JDBC.
+- Understanding CRUD operations with JDBC is essential for enterprise applications.
+
+Happy Coding! 🚀
+

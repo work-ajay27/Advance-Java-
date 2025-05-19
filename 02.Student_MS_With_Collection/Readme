@@ -1,0 +1,26 @@
+# 🎓 Student Management System with Collection
+
+This project implements a **Student Management System** using **Java Collections**. It allows users to perform CRUD (Create, Read, Update, Delete) operations on student records without using a database.
+
+## 📌 Features
+- Add a new student
+- View all students
+- Search for a student by ID
+- Update student details
+- Delete a student by ID
+
+## 🛠 Technologies Used
+- **Java**
+- **Collections Framework** (ArrayList, HashMap, etc.)
+
+## 🎯 Purpose of the Code
+- Demonstrates CRUD operations using Java Collections.
+- Provides a simple way to manage student data without a database.
+- Helps in understanding how to use collections for real-world applications.
+
+## 📄 Notes
+- This is a beginner-friendly project to practice Java Collections.
+- Understanding CRUD operations with collections is useful for building scalable applications.
+
+Happy Coding! 🚀
+
