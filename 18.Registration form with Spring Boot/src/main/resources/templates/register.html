@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Student Registration</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #a8edea, #fed6e3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-box {
+            background-color: #ffffffcc;
+            padding: 40px 50px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            width: 420px;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease;
+        }
+
+        .form-box:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        label {
+            font-weight: 600;
+            color: #333;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background: linear-gradient(135deg, #43e97b, #38f9d7);
+        }
+    </style>
+</head>
+<body>
+<div class="form-box">
+    <h2>Student Registration</h2>
+    <form th:action="@{/register}" method="post" th:object="${student}">
+        <label for="name">Name</label>
+        <input type="text" th:field="*{name}" placeholder="Enter your name" required />
+
+        <label for="address">Address</label>
+        <input type="text" th:field="*{address}" placeholder="Enter your address" required />
+
+        <label for="password">Password</label>
+        <input type="password" th:field="*{password}" placeholder="Enter your password" required />
+
+        <label for="info">Info</label>
+        <input type="text" th:field="*{info}" placeholder="Additional info" />
+
+        <label for="phone">Phone</label>
+        <input type="text" th:field="*{phone}" placeholder="Enter your phone number" required />
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+</body>
+</html>
